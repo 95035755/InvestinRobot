@@ -55,7 +55,9 @@ void loop() {
   right->Reverse();
   delay(300);
   left->Stop();
-  count += 1;
+  delay(10000);
+  right(stop);
+  delay(3000)
 }
 
   while (true) {
