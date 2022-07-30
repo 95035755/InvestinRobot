@@ -5,6 +5,9 @@
 #define SENSOR_ECHO_PIN A2
 #define MAX_DISTANCE 250
 
+#define TABLE_TRIGGER_PIN A3
+#define TABLE_ECHO_PIN A4
+
 #define SERVO_PIN 10
 
 #define RIGHT_FWD 4
@@ -53,7 +56,7 @@ void setup() {
   servo->write(90);
   
   sensor = new NewPing(SENSOR_TRIGGER_PIN, SENSOR_ECHO_PIN, MAX_DISTANCE);
-  tableSensor = new NewPing(SENSOR_TRIGGER_PIN, SENSOR_ECHO_PIN, MAX_DISTANCE);
+  tableSensor = new NewPing(TABLE_TRIGGER_PIN, TABLE_ECHO_PIN, MAX_DISTANCE);
 }
 
 int get_distance() {
