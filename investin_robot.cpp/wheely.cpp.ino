@@ -51,14 +51,16 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int distance = get_distance();
-  if (distance > 20) {
-    left->Forward();
-    right->Forward();
-  } else {
-    left->Stop();
-    right->Stop();
-    delay(500);
+  left->Reverse();
+  right->Reverse();
+  delay(300);
+  left->Stop();
+  count += 1;
+}
+
+  while (true) {
+    
   }
+
   delay(10);
 }
