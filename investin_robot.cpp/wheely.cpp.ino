@@ -2,9 +2,9 @@
 #define SENSOR_ECHO_PIN 12
 
 #define LEFT_FWD 4
-//#define LEFT_REV 5
-//#define RIGHT_FWD 7
-//#define RIGHT_REV 6
+#define LEFT_REV 5
+#define RIGHT_FWD 7
+#define RIGHT_REV 6
 
 class Servo {
 private:
